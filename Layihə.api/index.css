@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: #888
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu li{
+    list-style: none;
+    padding: 10px;
+}
+
+#blacktop{
+    background-color: #333;
+}
+
+#whitetop{
+    background-color: #fff;
+    height: 113px;
+}
+
+img{
+    padding: 33px;
+}
+
+.icon{
+    margin: 0 100px;
+    
+}
