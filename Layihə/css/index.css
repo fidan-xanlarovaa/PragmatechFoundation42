@@ -1,7 +1,8 @@
 body{
     margin: 0px;
     padding: 0px;
-    color: #888
+    color: #888;
+    font-family: " Ubuntu",sans-serif;
 }
 .display{
     display: flex;
@@ -64,7 +65,7 @@ img{
 }
 
 .slider{
-    background-image: url(../img/1.png);
+    background-image: url(../img/slide01.jpg);
     background-repeat: no-repeat;
     margin: 10px auto;
     width: 1888px;
@@ -162,25 +163,70 @@ img{
 
 .pic{
     border:8px solid black;
+    background-image: url(../img/product01.jpg);
+    text-align: left;
+    color: black;
+    position:relative;
+    
 }
+
+
+
 
 .pic-2{
     border-bottom: 8px solid black;
     border-top: 8px solid black;
     border-right:8px solid black ;
+    position:relative;
+}
+
+.pi-2{
+    background-image: url(../img/product02.jpg);
+}
+.pi-3{
+    background-image: url(../img/product03.jpg);
 }
 
 .pic-3{
     border-right:8px solid black;
     border-bottom: 8px solid black;
     border-left:8px solid black;
+    background-image: url(../img/product04.jpg);
+    position:relative;
     
 }
 
 .pic-4{
     border-bottom: 8px solid black;
     border-right:8px solid black ;
+    position:relative;
+}
+
+.pi-5{
+    background-image: url(../img/product05.jpg);
+}
+.pi-6{
+    background-image: url(../img/product06.jpg);
 }
 
 
+.textProduct {
+    
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-75%) translateY(-45%);
+    color: #303030;
+    
 
+  
+}
+.textProduct h1{
+    font-size: 30px;
+    font-weight: 550;
+}
+.textProduct p{
+    font-size: 14px;
+    font-weight: 70;
+}
