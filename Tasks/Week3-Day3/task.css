@@ -1,0 +1,40 @@
+.main{
+    width:450px;
+    margin:0px auto;
+    
+    
+}
+
+.kvd,textarea{
+    height:320px;
+    width:450px;
+    background:black;
+    color:white;
+    
+}
+
+textarea{
+    resize:none;
+    border:0px;
+}
+
+textarea::placeholder {
+    color: white;
+    font-size: 1.5em;
+    padding-top: 30%;
+    padding-left: 18%;
+    
+  }
+
+.kvd-2{
+    
+    height:0px;
+    width:0px;
+    margin-left:80px;
+    border-top:25px solid black;
+    border-right:45px solid  transparent;
+    border-left:45px solid  black;
+    border-bottom: 25px solid  transparent;
+}
+    
+

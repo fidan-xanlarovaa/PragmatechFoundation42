@@ -161,12 +161,17 @@ img{
     margin:0px auto;
 }
 
+/*.col-4{
+    position: relative;
+}*/
+
 .pic{
     border:8px solid black;
     background-image: url(../img/product01.jpg);
     text-align: left;
     color: black;
-    position:relative;
+    position:absolute;
+    
     
 }
 
@@ -229,4 +234,16 @@ img{
 .textProduct p{
     font-size: 14px;
     font-weight: 70;
+}
+
+.pics{
+    z-index:1;
+}
+.overlay{
+    background-color: rgba(48,48,48,0.89);
+    position: absolute;
+    z-index:2;
+    width: 100%;
+    height: 100%;
+    
 }
