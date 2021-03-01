@@ -1,0 +1,44 @@
+#green{
+    background-color: rgb(24, 207, 24);
+    height:150px;
+    width:150px;
+}
+
+#yellow{
+    background-color: yellow;
+    height:150px;
+    width:150px;
+}
+
+#red{
+    background-color: red;
+    height:150px;
+    width:150px;
+}
+
+#pond6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#pond7{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+#pond8{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+#pond9{
+    display: flex;
+    flex-direction: column;
+
+}
+

@@ -1,3 +1,17 @@
+.con{
+    width:1270px;
+    margin: 0px auto;
+    
+}
+
+.cont{width:1135px;
+    margin: 0px auto;
+}
+
+.contii{width:567px;
+    margin: 0px auto;
+}
+
 .container{
     width:1900px;
     margin: 0px auto;
@@ -19,6 +33,7 @@
 
 .col-3{
     width:calc(100%/12*3);
+    
 }
 
 .col-4{
@@ -65,4 +80,13 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
+.text-right{
+    text-align: left;
+    position: absolute;
+    top: 50%;
+
+    left: 60%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
 
