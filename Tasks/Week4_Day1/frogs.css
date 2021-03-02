@@ -2,6 +2,7 @@
     background-color: rgb(24, 207, 24);
     height:150px;
     width:150px;
+    
 }
 
 #yellow{
@@ -14,6 +15,7 @@
     background-color: red;
     height:150px;
     width:150px;
+    
 }
 
 #pond6{
@@ -41,4 +43,46 @@
     flex-direction: column;
 
 }
+
+#pond10{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+#pond11{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+
+}
+
+#pond12{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+}
+
+#pond13{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+#pond14{
+    display: flex;
+    
+
+}
+
+#yellow14{
+    order:1;
+    background-color: yellow;
+    height:150px;
+    width:150px;
+}
+
 
