@@ -15,3 +15,4 @@
 
 # Week 4 görülən işlər
 - Flex Froggy bütün tapşırıqları yerinə yetirmək
+- Animation movzusu ile baqli tasklar islemek
