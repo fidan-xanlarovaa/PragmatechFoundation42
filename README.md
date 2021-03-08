@@ -19,4 +19,4 @@
 # Week 4 görülən işlər
 - Flex Froggy bütün tapşırıqları yerinə yetirmək
 - Animation movzusu ile baqli tasklar islemek
--Məqaləni tamamlamaq __ [Məqalə Linki](https://xanlarova-fidan.medium.com/interpreter-compiler-models-5275b4b7cfa9)
+- Məqaləni tamamlamaq __ [Məqalə Linki](https://xanlarova-fidan.medium.com/interpreter-compiler-models-5275b4b7cfa9)
