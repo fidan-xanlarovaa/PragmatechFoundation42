@@ -77,7 +77,7 @@ Block Scope:
 
 - Redeclaring a var variable with let, in the same scope, or in the same block, is not allowed:
 
-'''
+```
 var x = 2;       // Allowed
 let x = 3;       // Not allowed
 
@@ -85,7 +85,7 @@ let x = 3;       // Not allowed
   var x = 4;   // Allowed
   let x = 5   // Not allowed
 }
-'''
+```
 - Redeclaring a let variable with var, in the same scope, or in the same block, is also not allowed:
 
 - Variables defined with let are hoisted to the top of the block, but not initialized.**Meaning: The block of code is aware of the variable, but it cannot be used until it has been declared.**Using a let variable before it is declared will result in a ReferenceError. But contarary to let **var** variables **can be used** before it declared.
@@ -93,21 +93,72 @@ let x = 3;       // Not allowed
 - JavaScript const variables must be assigned a value when they are declared: 
 
 - Incorrect:
-'''
+```
 const PI;
 PI = 3.14159265359;
-'''
-- Correct: ''' const PI = 3.14159265359; '''
+```
+- Correct: ``` const PI = 3.14159265359; ```
 
 - You can change the elements of a constant array, but you can NOT reassign a constant object.
+
+
+##### Differences between let var and const
+
+- var declarations are globally scoped or function scoped while let and const are block scoped.
+- var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+- They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized.
+- While var and let can be declared without being initialized, const must be initialized during declaration.
 
 
 
 ### Functions
 
--
+- Function parameters are listed inside the parentheses () in the function definition.Function arguments are the values received by the function when it is invoked.
+- The () Operator Invokes the Function. Accessing a function without () will return the function object instead of the function result. 
 
 
+# JavaScript objects are containers for named values called properties or methods. ??????????
+
+### Objects
+
+- This code assigns many values (Fiat, 500, white) to a variable named car:
+``` var car = {type:"Fiat", model:"500", color:"white"}; ```
+
+- The name:values pairs in JavaScript objects are called properties
+
+- You can access object properties in two ways: ``` objectName.propertyName ``` - ``` person.lastName; ``` , ``` objectName["propertyName"] ``` - ``` person["lastName"]; ```
+ 
+- Objects Methods___Objects can also have methods.Methods are actions that can be performed on objects.Methods are stored in properties as function definitions. A method is a function stored as a property.
+``` 
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+```
 
 
+### Classes
 
+- A JavaScript class is not an object.It is a template for JavaScript objects.Class methods are created with the same syntax as object methods.Use the keyword class to create a class.Always add a constructor() method.Then add any number of methods.
+```
+```
+
+```
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+```
+
+
+### 

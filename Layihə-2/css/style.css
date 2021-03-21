@@ -1,0 +1,80 @@
+/*MARGIN--PADDING*/
+.margin-t-60{
+    margin-top: 60px;
+}
+
+.margin-b-60{
+    margin-bottom: 60px;
+}
+
+
+/*COLORS*/
+
+.color-9e8786{
+    color: #9e8786;
+}
+
+/*BACKGROUNDCOLORS*/
+
+.b-c-fbf9f7{
+    background-color: #fbf9f7;
+}
+
+/*TEXT*/
+
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.text-transform-uppercase{
+    text-transform: uppercase;
+}
+
+
+/*FONT-FAMILY*/
+
+.f-fam-lora-serif{
+    font-family: 'Lora', serif;;
+    }
+    
+
+/*FONT-SIZE*/
+.font-size-13{
+    font-size: 13px;
+}
+
+/*HEIGHT*/
+
+.height-250{
+    height: 250px;
+}
+/*--------*/
+
+.m-0-p-0{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.obj-fit{
+    object-fit:cover;
+}
+
+.bord-top-col-e5d0cf-12px{
+    border-top: 12px solid #e5d0cf;
+}
+
+/*.br-r{
+    border: 1px solid red;
+    
+}
+.br{
+    border: 1px solid black;
+   
+}
+.br-g{
+    border: 1px solid green;
+    
+}*/
+
+
