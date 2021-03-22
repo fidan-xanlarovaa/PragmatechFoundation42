@@ -1,10 +1,36 @@
-/*MARGIN--PADDING*/
-.margin-t-60{
-    margin-top: 60px;
+
+/*BACKGROUND-colors and images*/
+
+.b-c-fbf9f7{
+    background-color: #fbf9f7;
 }
 
-.margin-b-60{
-    margin-bottom: 60px;
+.b-c-white{
+    background-color: white;
+}
+
+.b-c-373737{
+    background-color: #373737;
+}
+
+.img-1{
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*BORDERS*/
+
+.b-1-37{
+    border: 1px solid #373737;
+}
+
+.b-r-25{
+    border-radius: 25px;
+}
+
+.bord-top-col-e5d0cf-12px{
+    border-top: 12px solid #e5d0cf;
 }
 
 
@@ -14,23 +40,13 @@
     color: #9e8786;
 }
 
-/*BACKGROUNDCOLORS*/
-
-.b-c-fbf9f7{
-    background-color: #fbf9f7;
+.color-7A7A7A{
+    color: #7A7A7A ;
 }
 
-/*TEXT*/
-
-.text-decoration-none{
-    text-decoration: none;
+.color-white{
+    color: white;
 }
-
-.text-transform-uppercase{
-    text-transform: uppercase;
-}
-
-
 /*FONT-FAMILY*/
 
 .f-fam-lora-serif{
@@ -43,38 +59,146 @@
     font-size: 13px;
 }
 
+.font-size-26{
+    font-size: 26px;
+}
+
+.font-weight-400{
+    font-weight: 400;
+}
+
 /*HEIGHT*/
+
+.height-140{
+    height: 140px;
+}
+
+.height-150{
+    height: 150px;
+}
+.height-160{
+    height: 160px;
+}
+
+.height-180{
+    height: 180px;
+}
+.height-200{
+    height: 200px;
+}
 
 .height-250{
     height: 250px;
 }
-/*--------*/
 
-.m-0-p-0{
-    margin: 0px;
-    padding: 0px;
+.height-550{
+    height: 550px;
 }
 
+.height-480{
+    height: 480px;
+}
 
+/*HOVER*/
+/*--------*/
+
+
+
+/*IMAGES*/
 .obj-fit{
     object-fit:cover;
 }
 
-.bord-top-col-e5d0cf-12px{
-    border-top: 12px solid #e5d0cf;
+
+
+
+/*MARGIN--PADDING*/
+.margin-t-60{
+    margin-top: 60px;
 }
 
-/*.br-r{
+.margin-t-210{
+    margin-top: 210px;
+}
+
+.margin-b-60{
+    margin-bottom: 60px;
+}
+
+.margin-b-170{
+    margin-bottom: 170px;
+}
+
+
+.padding-10-35{
+    padding:10px 35px;
+}
+
+.padding-l-15{
+    padding-left: 15px;;
+}
+
+
+
+
+
+/*TEXT*/
+
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.text-transform-uppercase{
+    text-transform: uppercase;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+
+
+
+
+.br-r{
     border: 1px solid red;
+    height: 200px;
     
 }
 .br{
     border: 1px solid black;
-   
+    height: 200px;
 }
 .br-g{
     border: 1px solid green;
+    height: 200px;
+}
+.br-b{
+    border: 1px solid blue;
+    height: 200px;
+}
+/*
+.br-1{
+    border: 1px solid red;
+    height: 200px;
     
-}*/
+    
+}
+.br-2{
+    border: 1px solid black;
+    height: 200px;
+    margin: 20px;
+}
+.br-3{
+    border: 1px solid green;
+    height: 200px;
+}
+.br-4{
+    border: 1px solid blue;
+}
+
+.height-65{
+    height:65px;
+}
 
 
