@@ -1,5 +1,4 @@
-
-/*BACKGROUND-colors and images*/
+/*BACKGROUND-colors*/
 
 .b-c-fbf9f7{
     background-color: #fbf9f7;
@@ -13,11 +12,7 @@
     background-color: #373737;
 }
 
-.img-1{
-    background-image: url(../img/1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 /*BORDERS*/
 
@@ -31,6 +26,12 @@
 
 .bord-top-col-e5d0cf-12px{
     border-top: 12px solid #e5d0cf;
+}
+
+.b-r-50{
+    
+    border-radius: 50%;
+    
 }
 
 
@@ -59,19 +60,50 @@
     font-size: 13px;
 }
 
+
+.font-size-18-5{
+    font-size: 18.5px;
+}
+
+
 .font-size-26{
     font-size: 26px;
+}
+
+.font-size-40{
+    font-size: 40px;
 }
 
 .font-weight-400{
     font-weight: 400;
 }
 
+.font-weight-500{
+    font-weight: 500;
+}
+
+.font-weight-600{
+    font-weight: 600;
+}
+
 /*HEIGHT*/
+
+.height-30{
+    height: 40px;
+}
+
+.height-100{
+    height: 100px;
+}
+
+.height-105{
+    height: 105px;
+}
 
 .height-140{
     height: 140px;
 }
+
 
 .height-150{
     height: 150px;
@@ -93,7 +125,9 @@
 
 .height-550{
     height: 550px;
+    
 }
+
 
 .height-480{
     height: 480px;
@@ -109,10 +143,41 @@
     object-fit:cover;
 }
 
+.img-1{
+    background-image: url(../img/1.jpg); 
+}
+
+.img-2{
+    background-image: url(../img/2.jpg); 
+}
+
+.img-3{
+    background-image: url(../img/3.jpg); 
+}
+
+.bac-repeat-no{
+    background-repeat: no-repeat;
+}
+
+.bac-size-cover{
+    background-size: cover;
+}
+
+
+.line{
+    background: url(../img/title-bg.svg) no-repeat bottom center;
+    background-size:60px ;
+}
+.dot{
+    padding: 80px 12%;
+    background: url(../img/dot.png) no-repeat center center;
+}
 
 
 
-/*MARGIN--PADDING*/
+
+
+/*MARGIN*/
 .margin-t-60{
     margin-top: 60px;
 }
@@ -120,6 +185,28 @@
 .margin-t-210{
     margin-top: 210px;
 }
+
+.margin-t-25{
+    margin-top: 25px;
+}
+
+.margin-t-20{
+    margin-top: 20px;
+}
+
+.margin-t-10{
+    margin-top: 10px;
+}
+
+.margin-t-165{
+    margin-top: 165px;
+}
+
+.margin-t-210{
+    margin-top: 210px;
+}
+
+
 
 .margin-b-60{
     margin-bottom: 60px;
@@ -130,12 +217,59 @@
 }
 
 
+.margin-10{
+    margin: 10px;
+}
+
+.margin-250-0{
+    margin: 150px 0px;
+}
+
+.margin-b-50{
+    margin-bottom: 50px;
+}
+
+
+
+/*--PADDING*/
+
+.padding-80{
+    padding:0px 80px;
+}
+
+.padding-0-0-25-0{
+    padding: 0px 0 25px 0;
+}
+
 .padding-10-35{
     padding:10px 35px;
 }
 
 .padding-l-15{
     padding-left: 15px;;
+}
+
+.padding-0-15{
+    padding:0px 20px;
+}
+
+.padding-40{
+    padding:0px 20px;
+}
+
+
+
+/*Position*/
+
+.position-rel{
+    position: relative;
+}
+
+.position-abs{
+    position: absolute;
+    top:57%;
+    right:4%;
+    left:4%
 }
 
 
@@ -156,9 +290,14 @@
     text-align: center;
 }
 
+.box-shadow-f4dad8{
+    box-shadow: inset 0 -8px 0 #f4dad8;
+}
 
-
-
+.letter-space-1{
+    letter-spacing: 2px;
+}
+/*
 
 .br-r{
     border: 1px solid red;
