@@ -126,7 +126,7 @@ PI = 3.14159265359;
 
 - The name:values pairs in JavaScript objects are called properties
 
-- You can access object properties in two ways: ``` objectName.propertyName ``` - ``` person.lastName; ``` , ``` objectName["propertyName"] ``` - ``` person["lastName"]; ```
+- You can access object properties in two ways: ``` objectName.propertyName ``` - ``` person.lastName; ``` , ``` objectName["propertyName"] ``` - ``` person["lastName"]; ```The difference is in how x is interpreted. When using a dot, the word after the dot is the literal name of the property. When using square brackets, the expression between the brackets is evaluated to get the property name. Whereas value.x fetches the property of value named “x”, value[x] tries to evaluate the expression x and uses the result, converted to a string, as the property name.
  
 - Objects Methods___Objects can also have methods.Methods are actions that can be performed on objects.Methods are stored in properties as function definitions. A method is a function stored as a property.
 ``` 
@@ -161,4 +161,54 @@ class Car {
 ```
 
 
-### 
+### Arrays
+
+- The elements in an array are stored as the array’s properties, using numbers as property names. Because you can’t use the dot notation with numbers and usually want to use a binding that holds the index anyway, you have to use the bracket notation to get at them.
+
+### Hoca veren methodlar
+
+#### document.getElementById(id)
+- void function, id-si olan elementin uzerinde yazilan emelleri gorur
+- teleb etdiyi arqument elemetlerin id-sidir
+- EXAMPLE:
+- HTML
+```
+<html>
+<head>
+  <title>getElementById example</title>
+</head>
+<body>
+  <p id="para">Some text here</p>
+  <button onclick="changeColor('blue');">blue</button>
+  <button onclick="changeColor('red');">red</button>
+</body>
+</html>
+```
+
+- JS
+```
+function changeColor(newColor) {
+  var elem = document.getElementById('para');
+  elem.style.color = newColor;
+}
+```
+
+- Result
+- Some text here
+
+```blue```   ``` red```
+
+
+#### document.getElementsByTagName(name)
+- document.getElementsByClassName(name)
+- document.querySelector()
+- document.querySelectorAll()
+- document.createElement(element)
+- document.removeChild(element)
+- document.appendChild(element)
+- document.replaceChild(new, old)
+- document.write(text)
+- element.addEventListener
+- onclick event 
+- onload event
+- element.style object

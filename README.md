@@ -1,5 +1,5 @@
 # Layihə
-- [Layihə Linki](https://www.templatemonsterpreview.com/demo/55943.html?_gl=1*15vyfu8*_ga*MTQ4OTQ1ODQ0Ny4xNjEzNTg0NDEy*_ga_FTPYEGT5LY*MTYxMzU4NDQwOS4xLjEuMTYxMzU4NDQzMC4zOQ..&_ga=2.186333865.1877307184.1613584420-1489458447.1613584412)
+- [Layihə Linki](https://themesarea.com/joyelle/category/journal/2)
 
 # Week 1 görülən işlər
 - Nəzəriyyəni mənimsəmək, GitHub-u öyrənmək
