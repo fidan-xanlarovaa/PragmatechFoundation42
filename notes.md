@@ -168,6 +168,7 @@ class Car {
 ### Hoca veren methodlar
 
 #### document.getElementById(id)
+- The Document method getElementById() returns an Element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.
 - void function, id-si olan elementin uzerinde yazilan emelleri gorur
 - teleb etdiyi arqument elemetlerin id-sidir
 - EXAMPLE:
@@ -200,14 +201,47 @@ function changeColor(newColor) {
 
 
 #### document.getElementsByTagName(name)
-- document.getElementsByClassName(name)
-- document.querySelector()
-- document.querySelectorAll()
-- document.createElement(element)
-- document.removeChild(element)
-- document.appendChild(element)
-- document.replaceChild(new, old)
-- document.write(text)
+#### document.getElementsByClassName(name)
+
+
+#### document.querySelector()
+
+- return function
+- The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.Between () we should rite the selector which we want to find. 
+```var el = document.querySelector(".myclass");```
+- A more complex selector ```var el = document.querySelector("div.user-panel.main input[name='login']");```
+- This will select an input with a parent div with the user-panel and the main class.
+- Negation
+As all CSS selector strings are valid, you can also negate selectors:
+```var el = document.querySelector("div.user-panel:not(.main) input[name='login']");```
+- This will select an input with a parent div with the user-panel class but not the main class.
+
+#### document.querySelectorAll()
+
+- same as document.querySelector() but returns not only first but all elements  that matches the specified selector
+
+
+#### document.createElement(element)
+- creates the element which we write between(" ").
+
+
+#### node.removeChild(element)
+```
+let d = document.getElementById("top");
+let d_nested = document.getElementById("nested");
+let throwawayNode = d.removeChild(d_nested);
+```
+
+#### node.appendChild(element)
+
+- The Node.appendChild() method adds a node to the end of the list of children of a specified parent node. If the given child is a reference to an existing node in the document, appendChild() moves it from its current position to the new position (there is no requirement to remove the node from its parent node before appending it to some other node).
+```
+// Create a new paragraph element, and append it to the end of the document body
+let p = document.createElement("p");
+document.body.appendChild(p);
+```
+#### document.replaceChild(new, old)
+#### document.write(text)
 - element.addEventListener
 - onclick event 
 - onload event
