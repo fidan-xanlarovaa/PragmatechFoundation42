@@ -35,5 +35,5 @@
 - basic slider yazmaq ve kodu optimal etmek(slider son sekle catande stoplasin)
 - To do list
 - Qarmon 
-- galery animation
+- galery 
 
