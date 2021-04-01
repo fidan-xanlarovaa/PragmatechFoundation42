@@ -246,3 +246,17 @@ document.body.appendChild(p);
 - onclick event 
 - onload event
 - element.style object
+
+
+#### Week 7 görülən işlər
+
+
+##### Day 2
+
+- document.querySelectorAll().length___eyni adda nece element var mueyyen edir
+- box frameden cole cixmasi ucun overflow:hidden; istifade edirik
+
+- niye script en asaqi qosduq
+- bugu hellele
+- box frameden cole cixmasin overflow:hidden;
+- niye margin-left ile alindira bilmedim?     transition niye islemir?

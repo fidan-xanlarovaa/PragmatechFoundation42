@@ -20,3 +20,20 @@
 - Flex Froggy bütün tapşırıqları yerinə yetirmək
 - Animation movzusu ile baqli tasklar islemek
 - Məqaləni tamamlamaq __ [Məqalə Linki](https://xanlarova-fidan.medium.com/interpreter-compiler-models-5275b4b7cfa9)
+
+# Week 7 görülən işlər
+
+### Day 1
+- <script> niye body-nin en asaqi hisesine qoyulur arasdirmaq
+- basic sliderin alqoritmini yazmaq
+- basic slider yazmaq
+
+### Day 2
+- basic slider yazmaq ve kodu optimal etmek(slider son sekle catande yeniden 1-ci sekile qayitsin)
+
+### Day 3
+- basic slider yazmaq ve kodu optimal etmek(slider son sekle catande stoplasin)
+- To do list
+- Qarmon 
+- galery animation
+
