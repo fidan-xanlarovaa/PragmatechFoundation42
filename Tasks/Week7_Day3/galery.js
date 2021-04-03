@@ -13,8 +13,6 @@ function ShowImage(some){
     </div>`
 
     document.body.innerHTML+=overlay
-    
-    
 
 
 }

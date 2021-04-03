@@ -1,19 +1,11 @@
 elem_status = true
-
 let p=document.querySelectorAll("p")
 console.log(p.length)
-
 function showHide(current) {
 
     let a=current.firstElementChild.innerHTML
-
-    
-
-    
-    if (elem_status) {
-        
-        
-     
+   
+    if (elem_status) {   
         
         for(i=0;i<p.length;i++){
            
@@ -25,6 +17,7 @@ function showHide(current) {
         }
         
         current.nextElementSibling.className = 'my-0 p-2 bg-light border show'
+        /*current.nextElementSibling.style.display = "block"*/
         current.firstElementChild.innerHTML="-"
             elem_status = false
         
@@ -33,18 +26,13 @@ function showHide(current) {
     
     else {
         current.nextElementSibling.className = 'my-0 p-2 bg-light border hide'
+        //current.nextElementSibling.style.display = "none"
         current.firstElementChild.innerHTML="+"
         elem_status = true
     }
     
-      
-    /*if (current.nextElementSibling.style.display = "none") {
-        current.nextElementSibling.style.display = "block"
-       
-    }
     
-    else {
-        current.nextElementSibling.style.display = "none"
-    }*/
+      
+    
 
 }

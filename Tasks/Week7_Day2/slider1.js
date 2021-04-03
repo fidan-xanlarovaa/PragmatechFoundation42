@@ -13,9 +13,7 @@ prev.addEventListener('click',function(){
        }
        a+=width;
     slider.style.transform = `translateX(${a}px)`
-    
-   
-   
+      
 
 })
 
