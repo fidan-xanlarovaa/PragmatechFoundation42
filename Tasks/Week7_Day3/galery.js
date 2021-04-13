@@ -6,7 +6,7 @@ function ShowImage(some){
     /*for(i=1;i<=use.length;i++){
         use[i].classList.remove()
     }*/
-    some.className="obj-cover padding-50"
+    some.className="obj-cover width-50"
     let overlay=`
     <div class="overlay">
     <img src="${some.getAttribute('src')}" onclick="CloseImage(this)">
@@ -25,7 +25,7 @@ function CloseImage(some){
     for(i=0;i<images.length;i++){
         if(img==images[i].getAttribute("src")){
             console.log(images[i])
-            images[i].className="obj-cover padding-0"
+            images[i].className="obj-cover width-100"
         }
     }
     

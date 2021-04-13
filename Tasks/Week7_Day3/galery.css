@@ -1,8 +1,18 @@
 .obj-cover{
     object-fit: cover;
+    
+}
+
+.width-100{
     width:100%;
    height: 100%;
 }
+
+.width-50{
+    width:50%;
+   height: 50%;
+}
+
 .margin-t-15{
     margin-top: 15px;
     
@@ -11,6 +21,19 @@
 .margin-b-15{
     margin-bottom: 50px;
     
+}
+
+.justify-content-betweenn{
+    justify-content: space-between;
+
+}
+
+.roww{
+    display: flex;
+}
+
+.coll-4{
+    width: 33%;
 }
 
 
