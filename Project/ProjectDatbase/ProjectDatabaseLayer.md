@@ -8,3 +8,11 @@
 ### Layihemdeki dinamik melumatlar
 -	yuxarida sadalanandan basqa diger butun melumatlar dinamikdir. Cunki sekilleri,basliqlari yazilari  deyismek isteye bilerem. Eyni zamanda mueyyen middetden bir yeni postlar elave olunacaqina gore bu melumatlarin static olmasi qeyri-mumkundur.
 
+- data itkisi olmasin deye duzgun yazilis olsun deye tableler elaelenir
+
+- ne istediyimi mueyyen etmek
+- isteye uyqun duzgun alqoritm yazmaq
+- alqorite uyqun step by step istifade edeceyimiz sintakslari  mueyyen etmek
+- sintakslardan istifade ederek codu yazmaq
+- sintakslari deerinden oyrenmek
+

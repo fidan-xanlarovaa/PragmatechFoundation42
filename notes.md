@@ -260,3 +260,15 @@ document.body.appendChild(p);
 - bugu hellele
 - box frameden cole cixmasin overflow:hidden;
 - niye margin-left ile alindira bilmedim?     transition niye islemir?
+
+
+
+### Python
+- primitiv type 1 nov data type olur
+- refference(sequence) type 1 nece variablesi olur, basqa data tipleri olur icinde meselen list tuple
+- index value pair index value pair nedir?
+- frozen type javascriptdeki consta oxsayir
+- type casting: bir tipi digerine cevirme demekdo
+
+## JS
+- arguments[1] reerv key worddur
