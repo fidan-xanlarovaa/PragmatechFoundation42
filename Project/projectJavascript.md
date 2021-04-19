@@ -26,45 +26,7 @@
 - [Texmini oxsatmaq istediyim slider olan link](https://smartslider3.com/static/)
 
 
-data structure- variable,array,object
-object oriented functional programming
 
-
-Yeni proqramlasdirma dili oyrenme rehberi
-Yaddasdan istifadeye gore dillerin kategoriyalari
-interpreter
-compiler
-yazilan butun emrler oxunaraq analiz olunur
-syntax olaraq
-istifade olunan datalarin hecmi olaraq
-Dilin yazilma uslubuna gore kategoriyalari
-imperative
-Object Oriented Paradigm
-Prosedural paradigm
-declarative
-Functional pradigm
-Syntax-ina gore dillerin kategoriyalar
-Strongly typed
-Weakly typed
-Core componentler
-variable
-data structure
-data types
-type casting
-functions
-class object brothers
-operators
-conditions
-loops
-language scopes
-Program workflow
-Output
-Input
-Algoritm
-
-
-codu run etmek codu machine dline cevirmek demekdi
-javascripti anlayan V8 engine interpretesi javascriptin browserde yuklu gelir ona gore orda aciriq
 
 
 

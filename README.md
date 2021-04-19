@@ -23,17 +23,24 @@
 
 # Week 7 görülən işlər
 
-### Day 1
 - <script> niye body-nin en asaqi hisesine qoyulur arasdirmaq
 - basic sliderin alqoritmini yazmaq
 - basic slider yazmaq
-
-### Day 2
 - basic slider yazmaq ve kodu optimal etmek(slider son sekle catande yeniden 1-ci sekile qayitsin)
-
-### Day 3
 - basic slider yazmaq ve kodu optimal etmek(slider son sekle catande stoplasin)
 - To do list
 - Qarmon 
 - galery 
+
+# Week 8 görülən işlər
+
+- Layihede javascript hisseleri mueyyenlesdimek
+- Javascript movzulari arasdirmaq
+- Sql ile bagli arasdirma etmek,ne ise yaradiqini anlamaq
+
+# Week 9 görülən işlər
+
+- Layihenin databasesini tamamlamaq
+- Pythona giris
+- Pythonda ilk kodu yazdim
 
