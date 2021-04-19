@@ -272,3 +272,12 @@ document.body.appendChild(p);
 
 ## JS
 - arguments[1] reerv key worddur
+
+
+data structure- variable,array,object
+object oriented functional programming
+
+
+
+codu run etmek codu machine dline cevirmek demekdi
+javascripti anlayan V8 engine interpretesi javascriptin browserde yuklu gelir ona gore orda aciriq

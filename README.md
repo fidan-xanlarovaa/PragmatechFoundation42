@@ -1,5 +1,6 @@
 # Layihə
 - [Layihə Linki](https://themesarea.com/joyelle/category/journal/2)
+-[Ders videolarinin linki](https://drive.google.com/drive/folders/132mgKx5Pcydusg4YhTEHF5hpr4UMADUG?usp=sharing)
 
 # Week 1 görülən işlər
 - Nəzəriyyəni mənimsəmək, GitHub-u öyrənmək
