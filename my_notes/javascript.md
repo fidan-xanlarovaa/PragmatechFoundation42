@@ -253,3 +253,7 @@ document.body.appendChild(p);
 
 ### Some notes
 - arguments[1] rezerv key worddur
+- javascripti anlayan V8 engine interpretesi javascriptin browserde yuklu gelir ona gore orda aciriq
+- codu run etmek codu machine dline cevirmek demekdi
+- data structure- variable,array,object _dir.
+- document.querySelectorAll().length___eyni adda nece element var mueyyen edir

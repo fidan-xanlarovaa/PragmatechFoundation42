@@ -1,6 +1,6 @@
 # Layihə
 - [Layihə Linki](https://themesarea.com/joyelle/category/journal/2)
--[Ders videolarinin linki](https://drive.google.com/drive/folders/132mgKx5Pcydusg4YhTEHF5hpr4UMADUG?usp=sharing)
+- [Ders videolarinin linki](https://drive.google.com/drive/folders/132mgKx5Pcydusg4YhTEHF5hpr4UMADUG?usp=sharing)
 
 # Week 1 görülən işlər
 - Nəzəriyyəni mənimsəmək, GitHub-u öyrənmək
@@ -44,4 +44,9 @@
 - Layihenin databasesini tamamlamaq
 - Pythona giris
 - Pythonda ilk kodu yazdim
+
+# Week 10 görülən işlər
+
+- Hackerrankdeki problemleri solve etmek (1)
+- Imperative && Declarative anlamaq (1)
 
