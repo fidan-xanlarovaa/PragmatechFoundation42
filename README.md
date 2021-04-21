@@ -1,7 +1,9 @@
 # Layihə
 - [Layihə Linki](https://themesarea.com/joyelle/category/journal/2)
 - [Ders videolarinin linki](https://drive.google.com/drive/folders/132mgKx5Pcydusg4YhTEHF5hpr4UMADUG?usp=sharing)
-
+- [Hackerrank](https://www.hackerrank.com/domains/python)
+- [Zoom](https://us02web.zoom.us/j/6209854846?pwd=Rk5sTGZDeHdFNmwvaUZvSmFBYithZz09)
+- [e-Olimp](https://www.e-olymp.com/az/users/xanlarovafidan)
 # Week 1 görülən işlər
 - Nəzəriyyəni mənimsəmək, GitHub-u öyrənmək
 
