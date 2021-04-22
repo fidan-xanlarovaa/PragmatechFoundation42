@@ -1,9 +1,20 @@
-# Layihə
+# GitHub qovluqları
+- "Project" - hal hazırda üzərində işlədiyim layihəyə aid bütün kodlar, şəkillər bu qovluqdadır.
+- "Tasks" - Hocanın dərsdə verdiyi tasklar bu qovluqdadır
+- "Məqalələr" - Hocanın verdiyi bütün məqalələr bu qovluqdadır.
+- "Python" - Python ile əlaqəli e-Olimp və Hackerrank-dən olan problemlər(əsəsən error olanlar) bu qovluqdadır.
+- "My notes" - Bütün qeydlərim bu qovluqdadır.(hamsı md faylıdır)
+- "Layihə" - Hal hazırda işləmədiyim layihə bu qovluqdadır.(Layihəmi dəyişdirmə səbəbinə görə)
+
+# Short-cuts
 - [Layihə Linki](https://themesarea.com/joyelle/category/journal/2)
 - [Ders videolarinin linki](https://drive.google.com/drive/folders/132mgKx5Pcydusg4YhTEHF5hpr4UMADUG?usp=sharing)
 - [Hackerrank](https://www.hackerrank.com/domains/python)
 - [Zoom](https://us02web.zoom.us/j/6209854846?pwd=Rk5sTGZDeHdFNmwvaUZvSmFBYithZz09)
 - [e-Olimp](https://www.e-olymp.com/az/users/xanlarovafidan)
+- [w3 Python](https://www.w3schools.com/python/python_ref_string.asp)
+- [Python compiler](https://www.programiz.com/python-programming/online-compiler/)
+
 # Week 1 görülən işlər
 - Nəzəriyyəni mənimsəmək, GitHub-u öyrənmək
 

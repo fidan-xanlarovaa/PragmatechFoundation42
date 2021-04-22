@@ -14,6 +14,6 @@ print(sum)'''
 a=list(input().split())
 c=a[0]
 d=a[1]
-print(c+d)
+print(int(c)+int(d))
     
   

@@ -31,3 +31,8 @@
 
 - string metodlarini oyren ginen 
 - class-based ve prototype based musbet menfi terflerini arasdir.
+
+#### arr = map(int, input().split())
+- creating a dynamic array 
+
+### 
