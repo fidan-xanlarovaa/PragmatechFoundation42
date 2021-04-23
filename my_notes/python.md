@@ -35,4 +35,11 @@
 #### arr = map(int, input().split())
 - creating a dynamic array 
 
-### 
+### OOP
+- daha suretli daha insanlarin anladiqi bir dilde kod yazmaq
+- atribut sac rengi goz rengi boyu yasi
+- dinamic xususiyyetler var xarakteri falan
+- 2 ve daha cox obyektin unsiyyeti neticesinde ortaya cixan prosesdir OOP.bunu yazmaq ucun olan sintaksdir,qaydalardir
+- Pythonda stanoklar yazilib, hamsinin istehsal etdiyi produclar var bu mehsullara biz int comple float falan deyirik
+- her seyin fundametinde object adinda bir class yatir
+- constructurun iwi bow olan 0byekte specefik xususiyyetler vermek.Pythonda adina __init__ yaziriq constructorun avtmatik birinci ozu iwe duwur.degerleri manual caqirilir

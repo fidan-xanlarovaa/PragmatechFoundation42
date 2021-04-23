@@ -54,12 +54,17 @@ def MaaslarinCemi():
 
 
 def IstifadeciElaveEtmek():
-    
-    name=input("\nZəhmət olmasa işçinin adını daxil edin:  ")
+    n=input("\nZəhmət olmasa neçə istifadəçi əlavə etmək istədiyiniz yazın:  ")
+    for i in range(int(n)):
+        name=input("\nZəhmət olmasa işçinin adını daxil edin:  ")
 
-    surname=input("Zəhmət olmasa işçinin soyadını daxil edin:  ")
-    email=input("Zəhmət olmasa işçinin emailini daxil edin:  ")
-    maas=int(input("Zəhmət olmasa işçinin maaşını daxil edin:  "))
-    
-    AddUser(name,surname,email,maas)
+        surname=input("Zəhmət olmasa işçinin soyadını daxil edin:  ")
+        email=input("Zəhmət olmasa işçinin emailini daxil edin:  ")
+        
+        while "@" not in email:
+            email=input("Zəhmət olmasa işçinin emailini düzgün daxil edin (Qeyd! _ Emaildə mütləq '@' işarəsindən istifadə olunmalıdır):  ")
+        
+        maas=int(input("Zəhmət olmasa işçinin maaşını daxil edin:  "))  
+        
+        AddUser(name,surname,email,maas)
     

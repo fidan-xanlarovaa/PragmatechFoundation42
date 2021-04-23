@@ -1,4 +1,4 @@
-if __name__ == '__main__':
+'''if __name__ == '__main__':
     s = input()
 list_numalp=[]
 list_num=[]
@@ -43,4 +43,16 @@ else:
 if "True" in list_upper:
     print("True")
 else:
-    print("False")
+    print("False")'''
+
+list1=[{'Ad': 'dggsd', 'Soyad': 'ddfgf', 'Tam_ad': 'a a', 'email': 'gfdgdf', 'maas': 20},{'Ad': 'dggsd', 'Soyad': 'ddfgf', 'Tam_ad': 'dggsd ddfgf', 'email': 'gfdgdf', 'maas': 15}]
+list2=[]
+for i in list1:
+    list2.append(i['maas'])
+maxi=max(list2)
+index=list2.index(maxi)
+max_user=list1[index]
+print(max_user['Tam_ad'])
+
+
+
