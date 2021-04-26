@@ -2,7 +2,7 @@
 - "Project" - hal hazırda üzərində işlədiyim layihəyə aid bütün kodlar, şəkillər bu qovluqdadır.
 - "Tasks" - Hocanın dərsdə verdiyi tasklar bu qovluqdadır
 - "Məqalələr" - Hocanın verdiyi bütün məqalələr bu qovluqdadır.
-- "Python" - Python ile əlaqəli e-Olimp və Hackerrank-dən olan problemlər(əsəsən error olanlar) bu qovluqdadır.
+- "Python" - Python ile əlaqəli kod və qovluqdadır. Hackerrank_solved qovluğunda tam düzgün problemlərin kodlari  və problemlərin  linklərini yerləşdirdiyim -md faylı,Hackerrank_try_to_solve qovluğunda isə düzgün olmayan, lakin səhvimi tapa bilmədiyim problemlərin  kodları və problemlərin  linklərini yerləşdirdiyim -md faylı var. 
 - "My notes" - Bütün qeydlərim bu qovluqdadır.(hamsı md faylıdır)
 - "Layihə" - Hal hazırda işləmədiyim layihə bu qovluqdadır.(Layihəmi dəyişdirmə səbəbinə görə)
 
