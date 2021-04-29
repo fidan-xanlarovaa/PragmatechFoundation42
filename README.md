@@ -62,4 +62,12 @@
 
 - Hackerrankdeki problemleri solve etmek (1)
 - Imperative && Declarative anlamaq (1)
+- Mini HR proqrami yazmaq
+
+# Week 11 görülən işlər
+
+- Flask qurasdirmaq
+- Form doldurmaq ucun sehife yaratmaq
+
+
 
