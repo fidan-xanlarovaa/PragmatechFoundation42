@@ -23,12 +23,26 @@
                 <form action="/add" method='POST'>
                     <input type="text" class="form-control my-2" name='ad' placeholder="Adiniz">
                     <input type="text" class="form-control my-2" name='soyad' placeholder="Soyadiniz">
-                    <input type="text" class="form-control my-2" name='Weher' placeholder="Yaşadığınız şəhəri seçin">
+                   
+                    <select name="city" method="GET" action="/add"  class="form-control my-2" >
+                        {% for city in citys %}
+                        <option value= "{{city}}" SELECTED>{{city}}</option>"
+                        {% endfor %}
+                    </select>
                     <input type="submit" class="btn btn-primary my-2" value="Gonder">
+
+                    <div class="row" style="display: flex;align-items: center;justify-content: space-around;">
+                        <div class="col-4"><a style="font-size: 15px; color: blueviolet;font-weight: bolder;" href={{url_for('index')}}>Əsas səhifəyə qayıt</a></div>
+                        <div class="col-3"><a style="font-size: 15px; color: blueviolet;font-weight: bolder;" href={{url_for('show')}}>Nəticələrə bax</a></div>
+            
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+
+   
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
