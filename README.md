@@ -68,6 +68,7 @@
 
 - Flask qurasdirmaq
 - Form doldurmaq ucun sehife yaratmaq
+- Form ucun sehife yaratmaq, melumatlari delete  ve update etmek
 
 
 
