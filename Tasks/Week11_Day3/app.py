@@ -5,6 +5,10 @@ app=Flask(__name__)
 myUsers=[]
 id=1
 
+@app.route("/shw")
+def shw():
+    return render_template("shw.html",myUsers=myUsers)
+    
 @app.route('/',methods=['GET','POST'])
 def index():
     global id
@@ -19,9 +23,6 @@ def index():
         return redirect("/shw")
     return render_template("index.html")
 
-@app.route("/shw")
-def shw():
-    return render_template("shw.html",myUsers=myUsers)
 
 @app.route("/delete/<silinicekId>")
 def delete(silinecekId):

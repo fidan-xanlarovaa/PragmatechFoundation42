@@ -1,0 +1,34 @@
+{% extends 'admin/base.html' %} {% block content %}
+
+<h3 class="my-3">Add Post</h3>
+<form action="/admin/news" method='POST' enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name="p_title" placeholder="Post Title">
+    <input type="text" class="form-control my-2" name="p_desc" placeholder="Post Description">
+    <input type="file" class="form-control my-2" name='p_photo'>
+    <input type="submit" class="btn btn-success my-2" value='Add Post'>
+</form>
+<hr>
+<h3 class="my-3">All News</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Post Title</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for post in posts %}
+        <tr>
+            <td scope="row">{{post.id}}</td>
+            <td>{{post.p_title}}</td>
+            <td>
+                <a href="">Delete</a>
+                <a href="">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+{% endblock %}

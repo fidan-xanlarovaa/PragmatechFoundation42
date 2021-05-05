@@ -1,0 +1,23 @@
+{% extends "main.html" %} {% block content %}
+<div class="row">
+  <div class="col-6"><a href="country/add">country/add</a></div>
+  <div class="col-6"><a href="state/add">state/add</a></div>
+</div>
+<h3 class="my-3">Show All Data</h3>
+<form action="/",method='POST'>
+    <select name="country" class="form-control" >
+        {% for i in countries %}
+             <option value="{{i.id}}" >{{i.counry_name}}</option>
+        {% endfor %}
+    </select>
+
+<input type="submit" class="btn btn-primary my-2" value='Show States'>
+
+</form>
+<ul>
+  {% for i in states %}
+  <li>{{i.state_name}}</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
