@@ -13,13 +13,25 @@
       <div class="container">
           <div class="row">
               <div class="col-6">
-                  <form action="">
+                  <form action="/",method='POST'>
                       <input name='name' type="text" placeholder="Adınızı daxil edin">
                       <input name='surname' type="text" placeholder="Soyadınızı daxil edin">
-                      <input name='name' type="email" placeholder="İmayilinizi daxil edin">
+                      <input name='username' type="text" placeholder="Istifadəçi adınızı daxil edin">
+                      <input name='email' type="email" placeholder="İmayilinizi daxil edin">
                       <input type="password" name='password' placeholder="Kodunuzu daxil edin">
-                      
-                      <input type="password" name='password' placeholder="Kodunuzu daxil edin">
+                      <input type="text" name='adress' placeholder="Ünvanınızı daxil edin">
+                      <input type="text" name='adress1' placeholder="Əlavə bir ünvanınızı daxil edin">
+                      <select name="country" method="GET" action="/"  class="form-control my-2" >
+                        {% for i in citys %}
+                        <option value= "{{i.id}}" SELECTED>{{i.country_name}}}</option>"
+                        {% endfor %}
+                      </select>
+
+                      <select name="city" method="GET" action="/add"  class="form-control my-2" >
+                        {% for i in citys %}
+                        <option value= "{{i.id}}" SELECTED>{{i.state_name}}</option>"
+                        {% endfor %}
+                    ``</select>
 
                   </form>
               </div>

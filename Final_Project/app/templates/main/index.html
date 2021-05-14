@@ -1,0 +1,236 @@
+{% extends "main/layout.html" %}{% block content %}
+
+
+
+    <!--Section-3 slider-->
+
+       
+    <!--Section 4- Bizim haqqimizda-->
+
+    <section class="br-1 container">
+        <div class="margin-t-210 margin-b-170">   
+           {% for i in about_sections %}
+           <div class="br-2 row ">
+                
+            <div class="br-3 col-5 dottt">
+                <img class="width-100 obj-fit height-480 padding-0-25" src="static/uploads/{{i.a_s_image}}">
+            </div>
+            <div class="br-3 col-7">
+                <div class="br-4 d-flex align-items-center height-180">
+                    <p class="font-size-26 f-fam-lora-serif font-weight-400 padding-l-15 ">{{i.a_s_title}}</p>
+                </div>
+                <div class="br-4 height-140 padding-l-15 ">
+                    <p class="color-7A7A7A f-fam-lora-serif">{{i.a_s_description}}</p>
+                </div>
+                <div class="br-4  height-160 padding-l-15 ">
+                    <a href="{{i.a_s_link}}"><button class="b-1-37 b-r-25 padding-10-35 b-c-373737 color-white f-fam-lora-serif">Daha çox oxu</button></a>
+                </div>
+            </div>
+        </div>
+           {% endfor %}
+            
+        </div>
+    </section>
+
+    <!--Section 5 Posts-->
+
+    <section class="br-r container">
+        <div class="posts">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center line margin-b-50">
+                    <p class="padding-0-0-25-0 font-size-26 f-fam-lora-serif font-weight-400 ">Səhifəmizdəki məhsullar</p>
+                </div>
+            </div>
+            <div class=" br-g height-550 row justify-content-between ">
+                <div class="br-g height-550 col margin-r-20 img-1 bac-repeat-no bac-size-cover position-rel opacity-0-8">
+                    <div class="b-c-white position-abs">
+                        <div class="d-flex justify-content-center margin-t-20">
+                            <p class="font-size-18-5 f-fam-lora-serif font-weight-500  ">Design and Production</p>
+                        </div>
+                        <div class="d-flex justify-content-center padding-0-15">
+                            <p class="color-7A7A7A f-fam-lora-serif text-align-center ">An idea that is not dangerous is unworthy of being called an idea at all</p>
+                        </div>
+                        <div class="d-flex justify-content-center margin-t-25">
+                            <a href="postlarKateqoriyali.html"><button class="b-1-37 b-r-25 padding-10-35 b-c-373737 color-white f-fam-lora-serif font-weight-500 ">Daha çox oxu</button></a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="br-g height-550 col margin-r-20 margin-l-20 img-2 bac-repeat-no bac-size-cover position-rel opacity-0-8">
+                    <div class="b-c-white position-abs">
+                        <div class="d-flex justify-content-center margin-t-20">
+                            <p class="font-size-18-5 f-fam-lora-serif font-weight-500  ">Innovation Design</p>
+                        </div>
+                        <div class="d-flex justify-content-center padding-0-15">
+                            <p class="color-7A7A7A f-fam-lora-serif text-align-center ">To be creative means to be in love with life. You can be creative if you love life</p>
+                        </div>
+                        <div class="d-flex justify-content-center margin-t-25">
+                            <a href="postlarKateqoriyali.html"><button class="b-1-37 b-r-25 padding-10-35 b-c-373737 color-white f-fam-lora-serif font-weight-500 ">Daha çox oxu</button></a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="br-g height-550 col margin-l-20 img-3 bac-repeat-no bac-size-cover position-rel opacity-0-8">
+                    <div class="b-c-white position-abs">
+                        <div class="d-flex justify-content-center margin-t-20">
+                            <p class="font-size-18-5 f-fam-lora-serif font-weight-500  ">Brand & Marketing</p>
+                        </div>
+                        <div class="d-flex justify-content-center padding-0-15">
+                            <p class="color-7A7A7A f-fam-lora-serif text-align-center ">You can never solve a problem on the level on which it was created</p>
+                        </div>
+                        <div class="d-flex justify-content-center margin-t-25">
+                            <a href="postlarKateqoriyali.html"><button class="b-1-37 b-r-25 padding-10-35 b-c-373737 color-white f-fam-lora-serif font-weight-500 ">Daha çox oxu</button></a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--Section-6 motto-->
+
+    <section class="container">
+        <div class="margin-250-0">
+            <div class="row ">
+                <div class="col-12 d-flex justify-content-center  ">
+                    {% for object in mottos %}
+                    <h3 class="letter-space-1 f-fam-lora-serif text-align-center dot">{{object.m_w_description}}<img src="../img/l2.jpg" class="height-30"><img src="../img/star.jpg" class="height-30"></h3>
+                    
+                    {% endfor %}</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section-7 founders-->
+
+    <section class="container">
+        
+        <div class="row justify-content-between">
+            <div class="col-6 ">
+                <div  class="d-flex justify-content-center ">
+                    <img class=" b-r-50 height-100" src="../img/img1.jpg">
+                </div>
+                <div class="d-flex justify-content-center margin-t-20">
+                    <p  class="padding-80 color-7A7A7A f-fam-lora-serif text-align-center ">You have to be burning with an idea, or a problem. If you’re not passionate enough from the start, you’ll never stick it out</p>
+                </div>
+                <div class="d-flex justify-content-center margin-t-20">
+                    <p class=" f-fam-lora-serif text-align-center font-weight-600 box-shadow-f4dad8">Fidan Xanlarova</p>
+                </div>
+            </div>
+
+            
+                <div class="col-6 ">
+                    <div  class="d-flex justify-content-center ">
+                        <img class=" b-r-50 height-100" src="../img/img2.jpg">
+                    </div>
+                    <div class="d-flex justify-content-center margin-t-20">
+                        <p  class="padding-80 color-7A7A7A f-fam-lora-serif text-align-center ">It’s really hard to design products by focus groups. A lot of times, people don’t know what they want until you show it to them</p>
+                    </div>
+                    <div class="d-flex justify-content-center margin-t-20 ">
+                        <p class=" f-fam-lora-serif text-align-center font-weight-600 box-shadow-f4dad8">Gülbəniz Əliyeva</p>
+                    </div>
+                </div>
+
+            
+        </div>
+    </section>
+
+    <!--Section-8 let's work together-->
+
+    <section class="container">
+        <div class="margin-t-165">
+            <div class="row">
+                <div class="height-445 br-r col-12 bac-repeat-no bac-size-cover obj-fit img-pen position-rel">
+                    <div class="b-white position-abs-1">
+                        <div class="b-c-white b-pink height-271">
+                            <div class="d-flex justify-content-center margin-40-30">
+                                <h3 class=" f-fam-lora-serif font-weight-500  ">Let’s work togheter</h3>
+                            </div>
+                            <div class="d-flex justify-content-center ">
+                                <p class="color-7A7A7A f-fam-lora-serif text-align-center ">Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep</p>
+                            </div>
+                            <div class="d-flex justify-content-center margin-t-25">
+                                <button class="b-1-37 b-r-25 padding-10-50 b-c-373737 color-white f-fam-lora-serif font-weight-500 ">BİZƏ YAZ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section-9 son postlar-->
+    
+    <section class="container">
+        <div class="margin-t-165">
+            
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center line margin-b-50">
+                    <p class="padding-0-0-25-0 font-size-26 f-fam-lora-serif font-weight-400 ">Ən Son Postlar</p>
+                </div>
+            </div>
+    
+        
+            <div class="row justify-content-between">
+                <div class="col-4 ">
+                    <div  class="d-flex justify-content-center ">
+                        <img class="height-105 b-r-50" src="../img/11.jpg">
+                    </div>
+                    <div class="d-flex justify-content-center margin-t-20">
+                        <p  class="padding-40  f-fam-lora-serif text-align-center font-weight-500">The true sign of intelligence is not knowledge but imagination</p>
+                    </div>
+                    <div class="d-flex justify-content-center margin-t-10">
+                        <p class="color-7A7A7A f-fam-lora-serif text-align-center font-size-13 ">JUNE 3, 2020</p>
+                    </div>
+                </div>
+
+            
+                <div class="col-4 ">
+                    <div  class="d-flex justify-content-center ">
+                        <img class="height-105 b-r-50" src="../img/22.jpg">
+                    </div>
+                    <div class="d-flex justify-content-center margin-t-20">
+                        <p  class="padding-40  f-fam-lora-serif text-align-center font-weight-500">If at first, the idea is not absurd, then there is no hope for it</p>
+                    </div>
+                    <div class="d-flex justify-content-center margin-t-10 ">
+                        <p class="color-7A7A7A f-fam-lora-serif text-align-center font-size-13 ">JUNE 3, 2020</p>
+                    </div>
+                </div>
+
+                <div class="col-4 ">
+                    <div  class="d-flex justify-content-center ">
+                        <img class="height-105 b-r-50" src="../img/33.jpg">
+                    </div>
+                    <div class="d-flex justify-content-center margin-t-20">
+                        <p  class="padding-40  f-fam-lora-serif text-align-center font-weight-500">Every day is an opportunity to be creative</p>
+                    </div>
+                    <div class="d-flex justify-content-center margin-t-10 ">
+                        <p class="color-7A7A7A f-fam-lora-serif text-align-center font-size-13 ">JUNE 3, 2020</p>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </section>
+
+    <!--Section-10 Instagram-->
+
+    <section class="container">
+        <div class="margin-t-210 margin-b-10">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center line margin-b-50">
+                    <p class="padding-0-0-25-0 font-size-26 f-fam-lora-serif font-weight-400 ">Instagram</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}
+
+    

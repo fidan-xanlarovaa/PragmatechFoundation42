@@ -1,0 +1,38 @@
+{% extends "admin/base.html" %}{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1>Əsas səhifənin haqqınımızda hissəsi</h1>
+        <hr>
+        <h3>Məlumatları daxil edin</h3>
+        <form action="{{ url_for('motivation_word_s') }}" method="POST">
+            <input type="text" class="form-control my-2" name="m_w_description" placeholder="Motivasiya sözünü daxil edin">
+            <input type="submit" class="btn btn-success my-2" value='Add Post'>
+        </form>
+        <hr>
+        <h3>Daxil etdiyiniz məlumatlar</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Motivasiya sözü</th>
+                    <th>Silmə/Yeniləmə</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in m_w_descriptions %}
+                <tr>
+                    <td scope="row">{{i.m_w_id}}</td>
+                    <td>{{i.m_w_description}}</td>
+                    <td>
+                        <a href="">Delete</a>
+                        <a href="">Update</a>
+                    </td>
+                </tr>
+                {% endfor %}
+        
+            </tbody>
+        </table>
+
+    </div>
+</div>
+{% endblock %}

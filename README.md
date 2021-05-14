@@ -1,10 +1,10 @@
 # GitHub qovluqları
-- "Project" - hal hazırda üzərində işlədiyim layihəyə aid bütün kodlar, şəkillər bu qovluqdadır.
+- "Project" -  layihəyənin front-endi bu qovluqdadır.
 - "Tasks" - Hocanın dərsdə verdiyi tasklar bu qovluqdadır
 - "Məqalələr" - Hocanın verdiyi bütün məqalələr bu qovluqdadır.
 - "Python" - Python ile əlaqəli kod və qovluqdadır. Hackerrank_solved qovluğunda tam düzgün problemlərin kodlari  və problemlərin  linklərini yerləşdirdiyim -md faylı,Hackerrank_try_to_solve qovluğunda isə düzgün olmayan, lakin səhvimi tapa bilmədiyim problemlərin  kodları və problemlərin  linklərini yerləşdirdiyim -md faylı var. 
 - "My notes" - Bütün qeydlərim bu qovluqdadır.(hamsı md faylıdır)
-- "Layihə" - Hal hazırda işləmədiyim layihə bu qovluqdadır.(Layihəmi dəyişdirmə səbəbinə görə)
+- "Final_Project" - layihəyənin son hali (front ve back birlikde) bu qovluqdadır.
 
 # Short-cuts
 - [Layihə Linki](https://themesarea.com/joyelle/category/journal/2)
@@ -69,6 +69,10 @@
 - Flask qurasdirmaq
 - Form doldurmaq ucun sehife yaratmaq
 - Form ucun sehife yaratmaq, melumatlari delete  ve update etmek
+
+# Week 12 görülən işlər
+
+- Layihenin backendini yazmaga baslamaq
 
 
 
