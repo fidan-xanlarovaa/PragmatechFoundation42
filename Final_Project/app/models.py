@@ -32,30 +32,27 @@ class Owners_of_the_page_section(db.Model):
     own_title=db.Column(db.String(50),nullable=False)
     own_description=db.Column(db.String(250),nullable=False)
     own_image=db.Column(db.String(250),nullable=False)
-    owner_posts=db.relationship('Posts',backref='Owners_of_the_page_section')
+    #owner_posts=db.relationship('Posts', backref='owners_of_the_page_section', lazy=True)
 
 
 class Post_Categories(db.Model):
+    __tableName__="Post_Categories"
     p_c_id=db.Column(db.Integer,primary_key=True,nullable=False)
     p_c_title=db.Column(db.String(50),nullable=False)
     p_c_description=db.Column(db.String(250),nullable=False)
     p_c_link=db.Column(db.String(250),nullable=False)
     p_c_link_title=db.Column(db.String(250),nullable=False) 
     p_c_image=db.Column(db.String(250),nullable=False)
-    category_posts=db.relationship('Posts',backref='Post_Categories')
+    category_posts=db.relationship('Posts', backref='Post_Categories', lazy=True)
 
 class Posts(db.Model):
+    __tableName__="Posts"
     p_id=db.Column(db.Integer,primary_key=True,nullable=False)
     p_title=db.Column(db.String(50),nullable=False)
     p_description=db.Column(db.Text,nullable=False)
     p_tags=db.Column(db.String(250),nullable=False)
     p_link=db.Column(db.String(250),nullable=False)
     p_image=db.Column(db.String(250),nullable=False)
-    p_writer_id=db.Column(db.Integer, db.ForeignKey('Owners_of_the_page_section.own_id'),nullable=False)
-    p_category_id=db.Column(db.Integer, db.ForeignKey('Post_Categories.p_c_id'),nullable=False)
+   # p_writer_id=db.Column(db.Integer,db.ForeignKey('owners_of_the_page_section.own_id'),nullable=False)
+    p_category_id=db.Column(db.Integer,db.ForeignKey('Post_Categories.p_c_id'),nullable=False)
     #post commentsde olmalidi amma hele prinsipi bilmediyim ucun yazmadim
-
-    
-
-
-  

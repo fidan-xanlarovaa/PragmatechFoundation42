@@ -57,6 +57,13 @@
     border-left: 1px solid #c5c4c4;;
 
 }
+.margin-35{
+    margin: 20px 35px;
+}
+.b-2525{
+    border-bottom: 1px solid #c5c4c4;
+    border-top: 1px solid #c5c4c4;;
+}
 
 
 .b-255{
@@ -697,6 +704,15 @@ ul a.footer:hover{
 
 
 /*--PADDING*/
+
+.padding-20-35{
+    padding: 5px 35px;
+}
+
+.padding-b-40{
+    padding-bottom: 40px;
+}
+
 .padding-t-15{
     padding-top: 15px;
 }
@@ -767,7 +783,9 @@ ul a.footer:hover{
 .padding-15{
     padding: 15px;
 }
-
+.padding-r-30{
+    padding-right: 30px;
+}
 .padding-7-13{
     padding: 7px 13px;
 }
@@ -869,6 +887,11 @@ margin-bottom: 15px;
 
 .text-align-center{
     text-align: center;
+    
+}
+
+.text-al{
+    text-align: justify;
 }
 
 .box-shadow-f4dad8{
