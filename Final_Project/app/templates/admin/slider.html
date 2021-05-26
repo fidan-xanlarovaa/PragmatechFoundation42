@@ -1,0 +1,64 @@
+{% extends "admin/base.html" %} {% block content %}
+<div class="flexx">
+    <div class="top-navbar">
+        <ul class="list-style-type-none">
+            <li><a class="text" href="{{ url_for('slider') }}">Slider</a></li>
+            <li><a class="text" href="{{ url_for('about_s') }}">Haqqımızda</a></li>
+            <li><a class="text" href="{{ url_for('motivation_word_s') }}">Motivasiya</a></li>
+            <li><a class="text" href="{{ url_for('owners_of_the_page_section') }}">Səhifə sahibləri</a></li>
+            <li><a class="text" href="{{ url_for('footer_slider_section') }}">Aşağı slider</a></li>
+        </ul>
+    </div>
+</div>
+<div class="flexx flexx-2">
+    <div class="content-div">
+
+        <h3 class="my-2">Əsas səhifə_Slider hissəsi</h3>
+        <hr>
+        <h5 class="my-3"> Yeni Kategoriya</h5>
+
+        <form action="{{url_for('slider')}}" method='POST' enctype="multipart/form-data">
+
+            {{form.s_title(class='form-control my-2' )}}
+            {{form.s_description(class='form-control my-2' )}}
+            {{form.s_link_title(class='form-control my-2')}}
+            {{form.s_link(class='form-control my-2') }}
+            {{form.s_image(class='form-control my-2')}}
+            {{ form.submit(value='Əlavə et',class='btn btn-primary')}}
+
+        </form>
+        <hr>
+        <h3>Daxil etdiyiniz məlumatlar</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Başlıq hissə</th>
+                    <th>Əlavə məlumat</th>
+                    <th>Düymə adı</th>
+                    <th>Düymə linki</th>
+                    <th>Silmə/Yeniləmə</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in S %}
+                <tr>
+                    <td scope="row">{{i.s_id}}</td>
+                    <td>{{i.s_title}}</td>
+                    <td>{{i.s_description}}</td>
+                    <td>{{i.s_link_title}}</td>
+                    <td>{{i.s_link}}</td>
+                    <td>
+                        <a href="">Delete</a>
+                        <a href="">Update</a>
+                    </td>
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+{% endblock %}

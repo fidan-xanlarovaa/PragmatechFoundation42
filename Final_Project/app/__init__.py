@@ -8,6 +8,7 @@ app=Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data2.db"
 UPLOAD_FOLDER='app/static/uploads/'
 app.config['UPLOAD_FOLDER']=UPLOAD_FOLDER
+app.config['SECRET_KEY']='mysecretkey'
 db = SQLAlchemy(app)
 migrate=Migrate(app,db)
 
@@ -15,5 +16,11 @@ from app.models import *
 from admin.routes import *
 from main.routes import *
 
+#db.create_all()
 
+
+
+
+
+ 
 

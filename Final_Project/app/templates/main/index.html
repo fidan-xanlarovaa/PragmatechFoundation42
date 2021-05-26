@@ -3,7 +3,29 @@
 
 
     <!--Section-3 slider-->
-
+    <div class="container br-2 height-695 b-w-10">
+        <div class="row">
+            {% for i in slider %}
+            
+            
+                <div class="height-695  col-10 bac-repeat-no bac-size-cover obj-fit  position-rel" style="background-image: url(static/uploads/{{i.s_image}});"><!---->
+                    <div class="b-white position-abs-11">
+                        <div class="b-c-white  height-255">
+                            <div class="d-flex justify-content-center">
+                                <h3 class=" f-fam-lora-serif font-weight-500  ">{{i.s_title}}</h3>
+                            </div>
+                            <div class="d-flex justify-content-center ">
+                                <p class="color-7A7A7A f-fam-lora-serif text-align-center ">{{i.s_description}}</p>
+                            </div>
+                            <div class="d-flex justify-content-center margin-t-25">
+                                <button class="b-1-37 b-r-25 padding-10-50 b-c-373737 color-white f-fam-lora-serif font-weight-500 "><a href="{{i.s_link}}">{{i.s_link_title}}</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+        </div>
+    </div>
        
     <!--Section 4- Bizim haqqimizda-->
 
@@ -106,55 +128,46 @@
     </section>
 
     <!--Section-7 founders-->
-
+   
     <section class="container">
         
         <div class="row justify-content-between">
+            {% for i in owners %}
             <div class="col-6 ">
                 <div  class="d-flex justify-content-center ">
-                    <img class=" b-r-50 height-100" src="../img/img1.jpg">
+                    <img class=" b-r-50 height-100 width-1000" src="static/uploads/{{i.own_image}}">
                 </div>
                 <div class="d-flex justify-content-center margin-t-20">
-                    <p  class="padding-80 color-7A7A7A f-fam-lora-serif text-align-center ">You have to be burning with an idea, or a problem. If you’re not passionate enough from the start, you’ll never stick it out</p>
+                    <p  class="padding-80 color-7A7A7A f-fam-lora-serif text-align-center ">{{i.own_description}}</p>
                 </div>
                 <div class="d-flex justify-content-center margin-t-20">
-                    <p class=" f-fam-lora-serif text-align-center font-weight-600 box-shadow-f4dad8">Fidan Xanlarova</p>
+                    <p class=" f-fam-lora-serif text-align-center font-weight-600 box-shadow-f4dad8">{{i.own_title}}</p>
                 </div>
             </div>
-
+            {% endfor %}
             
-                <div class="col-6 ">
-                    <div  class="d-flex justify-content-center ">
-                        <img class=" b-r-50 height-100" src="../img/img2.jpg">
-                    </div>
-                    <div class="d-flex justify-content-center margin-t-20">
-                        <p  class="padding-80 color-7A7A7A f-fam-lora-serif text-align-center ">It’s really hard to design products by focus groups. A lot of times, people don’t know what they want until you show it to them</p>
-                    </div>
-                    <div class="d-flex justify-content-center margin-t-20 ">
-                        <p class=" f-fam-lora-serif text-align-center font-weight-600 box-shadow-f4dad8">Gülbəniz Əliyeva</p>
-                    </div>
-                </div>
-
             
         </div>
     </section>
+    
+    
 
     <!--Section-8 let's work together-->
-
+    {% for i in f_slider %}
     <section class="container">
         <div class="margin-t-165">
             <div class="row">
-                <div class="height-445 br-r col-12 bac-repeat-no bac-size-cover obj-fit img-pen position-rel">
+                <div class="height-445 br-r col-12 bac-repeat-no bac-size-cover obj-fit position-rel" style="background-image: url(static/uploads/{{i.f_s_image}} );">
                     <div class="b-white position-abs-1">
                         <div class="b-c-white b-pink height-271">
                             <div class="d-flex justify-content-center margin-40-30">
-                                <h3 class=" f-fam-lora-serif font-weight-500  ">Let’s work togheter</h3>
+                                <h3 class=" f-fam-lora-serif font-weight-500  ">{{i.f_s_title}}</h3>
                             </div>
                             <div class="d-flex justify-content-center ">
-                                <p class="color-7A7A7A f-fam-lora-serif text-align-center ">Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep</p>
+                                <p class="color-7A7A7A f-fam-lora-serif text-align-center ">{{i.f_s_description}}</p>
                             </div>
                             <div class="d-flex justify-content-center margin-t-25">
-                                <button class="b-1-37 b-r-25 padding-10-50 b-c-373737 color-white f-fam-lora-serif font-weight-500 ">BİZƏ YAZ</button>
+                                <button class="b-1-37 b-r-25 padding-10-50 b-c-373737 color-white f-fam-lora-serif font-weight-500 "><a href="{{i.f_s_link}}"></a>{{i.f_s_link_title}}</button>
                             </div>
                         </div>
                     </div>
@@ -163,6 +176,8 @@
             </div>
         </div>
     </section>
+    {% endfor %}
+    
 
     <!--Section-9 son postlar-->
     

@@ -48,6 +48,13 @@
 .b-1-d{
     border: 1px solid #d3ced2
 }
+.b-b-b{
+    border: 1px solid #d3ced2
+}
+
+.b-w-10{
+    border: 10px solid white;
+}
 
 .b-1-e{
     border: 1px solid #eeeeee;
@@ -307,6 +314,9 @@
 .height-250{
     height: 250px;
 }
+.height-255{
+    height: 255px;
+}
 
 .height-271{
     height: 271px;
@@ -356,6 +366,10 @@
     
 }
 
+.height-695{
+    height: 695px;
+    
+}
 .width-100{
     width: 100%;
 }
@@ -372,7 +386,9 @@
     width: 80%;
 }
 
-
+.width-1000{
+    width: 100px;
+}
 
 .width-40{
     width: 40%;
@@ -769,7 +785,14 @@ margin-bottom: 15px;
     bottom: 15%;
 
 }
+.position-abs-11{
+    position: absolute;
+    top:27%;
+    
+    left:30%;
+    
 
+}
 .position-abs-2{
     position: absolute;
     top:33%;

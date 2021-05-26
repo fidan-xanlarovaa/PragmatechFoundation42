@@ -1,7 +1,20 @@
 {% extends "admin/base.html" %}{% block content %}
+<div class="flexx">
+    <div class="top-navbar">
+        <ul class="list-style-type-none">
+            <li ><a class="text" href="{{ url_for('slider') }}">Slider</a></li>
+            <li><a class="text" href="{{ url_for('about_s') }}">Haqqımızda</a></li>
+            <li><a class="text" href="{{ url_for('motivation_word_s') }}">Motivasiya</a></li>
+            <li><a class="text" href="{{ url_for('owners_of_the_page_section') }}">Səhifə sahibləri</a></li>
+            <li><a class="text" href="{{ url_for('footer_slider_section') }}">Aşağı slider</a></li>
+        </ul>
+    </div>
+  </div>
+  <div class="flexx flexx-2">
+    <div class="content-div">
 <div class="row">
     <div class="col-12">
-        <h1>Əsas səhifənin haqqınımızda hissəsi</h1>
+        <h1>Əsas səhifənin Motivasiya üçün söz hissəsi</h1>
         <hr>
         <h3>Məlumatları daxil edin</h3>
         <form action="{{ url_for('motivation_word_s') }}" method="POST">
@@ -34,5 +47,7 @@
         </table>
 
     </div>
+</div>
+</div>
 </div>
 {% endblock %}
