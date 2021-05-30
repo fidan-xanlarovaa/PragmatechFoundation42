@@ -1,2 +1,0 @@
-users=[]
-leng=len(users)

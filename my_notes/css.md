@@ -1,1 +1,0 @@
-- box frameden cole cixmasi ucun overflow:hidden; istifade edirik

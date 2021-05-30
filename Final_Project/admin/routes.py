@@ -175,7 +175,8 @@ def update(Id):
         i.p_c_description=form.p_c_description.data,
         i.p_c_link=form.p_c_link.data,
         i.p_c_link_title=form.p_c_link_title.data,
-        i.p_c_image=filename            
+        i.p_c_image=filename 
+        db.session.add(i)           
         db.session.commit()
         return redirect(url_for("post_Categories"))
     return render_template("admin/post_categories_update.html",form=form,i=i)

@@ -1,5 +1,0 @@
-1. [8_List Comprehensions](https://www.hackerrank.com/challenges/list-comprehensions/problem)
-2. [10_Finding the percentage](https://www.hackerrank.com/challenges/finding-the-percentage/problem)
-3. [11_Lists](https://www.hackerrank.com/challenges/python-lists/problem)
-4. [17_Find-a-string](https://www.hackerrank.com/challenges/find-a-string/problem)
-5. [18_String Validators](https://www.hackerrank.com/challenges/string-validators/problem)
