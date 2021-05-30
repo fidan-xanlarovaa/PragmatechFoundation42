@@ -1,4 +1,5 @@
 #admin
+
 from app import app
 from app.models import *
 from admin.forms import *
@@ -105,14 +106,14 @@ def slider():
 
 @app.route("/Owners_of_the_page",methods=['GET','POST'])
 def owners_of_the_page_section():
-    form=Owners_of_the_page_section_Form()
-    Owners=Owners_of_the_page_section.query.all()
+    form=Owner_Form()
+    Owners=Owner.query.all()
     if request.method=='POST':
         file=form.own_image.data
         filename=file.filename
         file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
 
-        owners_of_the_page=Owners_of_the_page_section(
+        owners_of_the_page=Owner(
             own_title=form.own_title.data,
             own_description=form.own_description.data,
             own_image=filename
@@ -128,29 +129,148 @@ def owners_of_the_page_section():
 
 @app.route("/Post_Categories",methods=['GET','POST'])
 def post_Categories():
-    form=Post_Categories_Form()
-    post_categories=Post_Categories.query.all()
+    form=Category_Form()
+    post_categories=Category.query.all()
     if request.method=='POST':
-        file=form.s_image.data
+        file=form.p_c_image.data
         filename=file.filename
         file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
 
-        category=Post_Categories(
+        categori=Category(
             p_c_title=form.p_c_title.data,
             p_c_description=form.p_c_description.data,
             p_c_link=form.p_c_link.data,
             p_c_link_title=form.p_c_link_title.data,
             p_c_image=filename
         )
-        db.session.add(category)
+        db.session.add(categori)
         db.session.commit()
-        return redirect(url_for("Post_Categories"))
+        return redirect(url_for("post_Categories"))
     return render_template("admin/post_categories.html",form=form,post_categories=post_categories)
 
 
 
+@app.route("/delete/<Id>")
+def delete(Id):
+    cat=Category.query.all()
+    for i in cat:
+        if i.id==int(Id):
+            db.session.delete(i)
+            db.session.commit()
+            return redirect(url_for("post_Categories"))
+                                               
+
+@app.route("/update/<int:Id>",methods=['GET','POST'])
+def update(Id):
+    form=Category_Form()
+    i=Category.query.get(Id)
+   
+    if request.method=='POST':
+        file=form.p_c_image.data
+        filename=file.filename
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
+
+                
+        i.p_c_title=form.p_c_title.data,
+        i.p_c_description=form.p_c_description.data,
+        i.p_c_link=form.p_c_link.data,
+        i.p_c_link_title=form.p_c_link_title.data,
+        i.p_c_image=filename            
+        db.session.commit()
+        return redirect(url_for("post_Categories"))
+    return render_template("admin/post_categories_update.html",form=form,i=i)
+
+#Posts
+
+@app.route("/posts",methods=['GET','POST'])
+def posts():
+    posts=Posts.query.all()
+    cate=Category.query.all()
+    owners=Owner.query.all()
+
+    if request.method=="POST":
+        file=request.files['p_image']
+        filename=file.filename
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
+
+        post=Posts(
+            p_title=request.form["p_title"],
+            p_description=request.form["p_description"],
+            p_data=request.form["p_data"],
+            p_link=request.form["p_link"],
+            p_tags=request.form["p_tags"],
+            owner_id=request.form["owner_id"],
+            category_id=request.form.get("category_id"),
+            p_image=filename
+        )
+
+        db.session.add(post)
+        db.session.commit()
+        return redirect(url_for("posts"))
+
+    return render_template("admin/posts.html",posts=posts,cate=cate,owners=owners)
 
 
 
+# Product Categories
+
+@app.route("/Product_Categories",methods=['GET','POST'])
+def pr_Categories():
+    form=Prcategory_Form()
+    pr_categories=Prcategory.query.all()
+    if request.method=='POST':
+        file=form.p_r_c_image.data
+        filename=file.filename
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
+
+        categori=Prcategory(
+            p_r_c_title=form.p_r_c_title.data,
+            p_r_c_description=form.p_r_c_description.data,
+            p_r_c_link=form.p_r_c_link.data,
+            p_r_c_link_title=form.p_r_c_link_title.data,
+            p_r_c_image=filename
+        )
+        db.session.add(categori)
+        db.session.commit()
+        return redirect(url_for("pr_Categories"))
+    return render_template("admin/productCat.html",form=form,pr_categories=pr_categories)
+
+#Products
+
+@app.route("/products",methods=['GET','POST'])
+def products():
+    products=Products.query.all()
+    cate=Prcategory.query.all()
+    
+
+    if request.method=="POST":
+        file=request.files['p_r_image']
+        filename=file.filename
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
+
+        product=Products(
+            p_r_title=request.form["p_r_title"],
+            p_r_description=request.form["p_r_description"],
+            
+            p_r_price=request.form["p_r_price"],
+            
+            prcategory_id=request.form.get("prcategory_id"),
+            p_r_image=filename
+        )
+
+    
+        db.session.add( product)
+        db.session.commit()
+        return redirect(url_for("products"))
+
+    return render_template("admin/products.html",cate=cate,products=products)
 
 
+@app.route("/deletee/<Id>")
+def deletee(Id):
+    cat=Products.query.all()
+    for i in cat:
+        if i.id==int(Id):
+            db.session.delete(i)
+            db.session.commit()
+            return redirect(url_for("products"))

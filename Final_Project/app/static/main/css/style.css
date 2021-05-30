@@ -487,24 +487,24 @@ ul a.footer:hover{
 }
 .dot{
     padding: 80px 12%;
-    background: url(../img/dot.png) no-repeat center center;
+    background: url(static/main/static_image/dot.png)  no-repeat center center;
 }
 
 .dott{
     width: 40%;
-    background: url(../img/dot.png) no-repeat top left;
+    background: url(static/main/static_image/dot.png) no-repeat top left;
 }
 
 
 .dottt{
     width: 40%;
-    background: url(../img/dot.png) no-repeat top left;
+    background: url(static/main/static_image/dot.png)  no-repeat top left;
 }
 
 .dot-1{
     width: 100%;
     margin-bottom: 15px;
-    background: url(../img/dot.png) no-repeat bottom center;
+    background: url(static/main/static_image/dot.png)  no-repeat bottom center;
     padding: 0 0 25px 0;
 }
 

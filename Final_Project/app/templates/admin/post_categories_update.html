@@ -1,0 +1,24 @@
+{% extends "admin/base.html" %}{% block content %}
+
+
+<div class="flexx flexx-2">
+    <div class="content-div">
+
+        <h3 class="my-2">Post Kateqotiyaları Yeniləmə</h3>
+        <hr>
+        <h5 class="my-3"> Yeni Kategoriya</h5>
+
+        <form action="{{url_for('update',Id=i.id)}}" method='POST' enctype="multipart/form-data">
+
+            {{form.p_c_title(class='form-control my-2', value=i.p_c_title )}}
+            {{form.p_c_description(class='form-control my-2', value=i.p_c_description  )}}
+            {{form.p_c_link_title(class='form-control my-2', value=i.p_c_link_title )}}
+            {{form.p_c_link(class='form-control my-2', value=i.p_c_link ) }}
+            {{form.p_c_image(class='form-control my-2', value=i.p_c_image )}}
+            {{ form.submit(value='Əlavə et',class='btn btn-primary')}}
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -3,7 +3,7 @@
 <div class="flexx flexx-2">
     <div class="content-div">
 
-        <h3 class="my-2">Post Kateqotiyalar</h3>
+        <h3 class="my-2">Post Kateqotiyaları</h3>
         <hr>
         <h5 class="my-3"> Yeni Kategoriya</h5>
 
@@ -33,14 +33,14 @@
             <tbody>
                 {% for i in post_categories %}
                 <tr>
-                    <td scope="row">{{i.p_c_id}}</td>
+                    <td scope="row">{{i.id}}</td>
                     <td>{{i.p_c_title}}</td>
                     <td>{{i.p_c_description}}</td>
                     <td>{{i.p_c_link_title}}</td>
                     <td>{{i.p_c_link}}</td>
                     <td>
-                        <a href="">Delete</a>
-                        <a href="">Update</a>
+                        <a href="{{url_for('delete',Id=i.id)}}">Delete</a>
+                        <a href="{{url_for('update',Id=i.id)}}">Update</a>
                     </td>
                 </tr>
                 {% endfor %}

@@ -1,0 +1,60 @@
+{% extends "main/layout.html" %}{% block content %}
+
+
+
+    <article class="b-c-white padding-b-70 width-70 margin-auto padding-t-75">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col"><p class="font-size-30 f-fam-lora-serif">Məhsullar<p></div>
+        </div>
+    </div>
+    <!--Section 5 Postlar-->
+
+    <section class="container ">
+        
+        <div class="margin-t-40 padding-b-40">
+            <div class="row ">
+
+        {% for i in productsy %}
+        <div class="br-1 col-3 padding-r-30 margin-t-45" >
+            <div style="background-image: url(static/uploads/{{i.p_r_image}});"  class="height-271  width-100  obj-fit bac-size-cover opacity-0-9" ></div>
+            
+            <div class="margin-t-25">
+                <p class="font-size-14-5 f-fam-lora-serif">{{i.p_r_title}}</p>
+             </div>
+            <div class="margin-t-25">
+                <p class="font-size-18-5 font-weight-600 f-fam-lora-serif">{{i.p_r_price}}</p>
+             </div>
+             <div class="br-4 margin-t-40 margin-b-60" >
+                 <button class="b-1-37 b-r-30 padding-10-35 b-c-373737 color-white f-fam-lora-serif">Səbətə əlavə et</button>
+             </div>
+        </div>
+        {% endfor %}
+        
+                
+                
+               
+            </div>
+        </div>
+       
+    </section>
+
+
+    </article>
+
+    
+<!--Section-4 Instagram-->
+
+<section class="container">
+    <div class="margin-80-0">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center line margin-b-50">
+                <p class="padding-0-0-25-0 font-size-26 f-fam-lora-serif font-weight-400 ">Instagram</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  
+  {% endblock %}

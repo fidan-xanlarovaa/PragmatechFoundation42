@@ -27,32 +27,54 @@ class Footer_Slider_section(db.Model):
     f_s_link_title=db.Column(db.String(250),nullable=False) 
     f_s_image=db.Column(db.String(250),nullable=False)
 
-class Owners_of_the_page_section(db.Model):
-    own_id=db.Column(db.Integer,primary_key=True,nullable=False)
+class Owner(db.Model):
+    id=db.Column(db.Integer,primary_key=True,nullable=False)
     own_title=db.Column(db.String(50),nullable=False)
     own_description=db.Column(db.String(250),nullable=False)
     own_image=db.Column(db.String(250),nullable=False)
-    #owner_posts=db.relationship('Posts', backref='owners_of_the_page_section', lazy=True)
+    posts=db.relationship('Posts', backref='owner', lazy=True)
 
 
-class Post_Categories(db.Model):
-    __tableName__="Post_Categories"
-    p_c_id=db.Column(db.Integer,primary_key=True,nullable=False)
+class Category(db.Model):
+    
+    id=db.Column(db.Integer,primary_key=True,nullable=False)
     p_c_title=db.Column(db.String(50),nullable=False)
     p_c_description=db.Column(db.String(250),nullable=False)
     p_c_link=db.Column(db.String(250),nullable=False)
     p_c_link_title=db.Column(db.String(250),nullable=False) 
     p_c_image=db.Column(db.String(250),nullable=False)
-    category_posts=db.relationship('Posts', backref='Post_Categories', lazy=True)
+    posts=db.relationship('Posts', backref='category', lazy=True)
 
 class Posts(db.Model):
-    __tableName__="Posts"
-    p_id=db.Column(db.Integer,primary_key=True,nullable=False)
+    
+    id=db.Column(db.Integer,primary_key=True,nullable=False)
     p_title=db.Column(db.String(50),nullable=False)
     p_description=db.Column(db.Text,nullable=False)
+    p_data= db.Column(db.DateTime)
     p_tags=db.Column(db.String(250),nullable=False)
     p_link=db.Column(db.String(250),nullable=False)
     p_image=db.Column(db.String(250),nullable=False)
-   # p_writer_id=db.Column(db.Integer,db.ForeignKey('owners_of_the_page_section.own_id'),nullable=False)
-    p_category_id=db.Column(db.Integer,db.ForeignKey('Post_Categories.p_c_id'),nullable=False)
+    owner_id=db.Column(db.Integer,db.ForeignKey('owner.id'),nullable=False)
+    category_id=db.Column(db.Integer,db.ForeignKey('category.id'),nullable=False)
     #post commentsde olmalidi amma hele prinsipi bilmediyim ucun yazmadim
+
+class Prcategory(db.Model):
+    
+    id=db.Column(db.Integer,primary_key=True,nullable=False)
+    p_r_c_title=db.Column(db.String(50),nullable=False)
+    p_r_c_description=db.Column(db.String(250),nullable=False)
+    p_r_c_link=db.Column(db.String(250),nullable=False)
+    p_r_c_link_title=db.Column(db.String(250),nullable=False) 
+    p_r_c_image=db.Column(db.String(250),nullable=False)
+    products=db.relationship('Products', backref='prcategory', lazy=True)
+
+class Products(db.Model):
+    
+    id=db.Column(db.Integer,primary_key=True,nullable=False)
+    p_r_title=db.Column(db.String(50),nullable=False)
+    p_r_description=db.Column(db.Text,nullable=False)
+    
+    p_r_price=db.Column(db.String(250),nullable=False)
+    p_r_image=db.Column(db.String(250),nullable=False)
+    prcategory_id=db.Column(db.Integer,db.ForeignKey('prcategory.id'),nullable=False)
+

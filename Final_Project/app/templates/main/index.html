@@ -64,50 +64,25 @@
                 </div>
             </div>
             <div class=" br-g height-550 row justify-content-between ">
-                <div class="br-g height-550 col margin-r-20 img-1 bac-repeat-no bac-size-cover position-rel opacity-0-8">
+                {% for i in pr_categories %}
+                
+               
+                <div style="background-image: url(static/uploads/{{i.p_r_c_image}});" class="br-g height-550 col margin-r-20 bac-repeat-no bac-size-cover position-rel opacity-0-8">
                     <div class="b-c-white position-abs">
                         <div class="d-flex justify-content-center margin-t-20">
-                            <p class="font-size-18-5 f-fam-lora-serif font-weight-500  ">Design and Production</p>
+                            <p class="font-size-18-5 f-fam-lora-serif font-weight-500  ">{{i.p_r_c_title}}</p>
                         </div>
                         <div class="d-flex justify-content-center padding-0-15">
-                            <p class="color-7A7A7A f-fam-lora-serif text-align-center ">An idea that is not dangerous is unworthy of being called an idea at all</p>
+                            <p class="color-7A7A7A f-fam-lora-serif text-align-center ">{{i.p_r_c_description}}</p>
                         </div>
                         <div class="d-flex justify-content-center margin-t-25">
-                            <a href="postlarKateqoriyali.html"><button class="b-1-37 b-r-25 padding-10-35 b-c-373737 color-white f-fam-lora-serif font-weight-500 ">Daha çox oxu</button></a>
+                            <a href="{{url_for('products_hair')}}"><button class="b-1-37 b-r-25 padding-10-35 b-c-373737 color-white f-fam-lora-serif font-weight-500 ">{{i.p_r_c_link_title}}</button></a>
                         </div>
                         <br>
                     </div>
                 </div>
-
-                <div class="br-g height-550 col margin-r-20 margin-l-20 img-2 bac-repeat-no bac-size-cover position-rel opacity-0-8">
-                    <div class="b-c-white position-abs">
-                        <div class="d-flex justify-content-center margin-t-20">
-                            <p class="font-size-18-5 f-fam-lora-serif font-weight-500  ">Innovation Design</p>
-                        </div>
-                        <div class="d-flex justify-content-center padding-0-15">
-                            <p class="color-7A7A7A f-fam-lora-serif text-align-center ">To be creative means to be in love with life. You can be creative if you love life</p>
-                        </div>
-                        <div class="d-flex justify-content-center margin-t-25">
-                            <a href="postlarKateqoriyali.html"><button class="b-1-37 b-r-25 padding-10-35 b-c-373737 color-white f-fam-lora-serif font-weight-500 ">Daha çox oxu</button></a>
-                        </div>
-                        <br>
-                    </div>
-                </div>
-
-                <div class="br-g height-550 col margin-l-20 img-3 bac-repeat-no bac-size-cover position-rel opacity-0-8">
-                    <div class="b-c-white position-abs">
-                        <div class="d-flex justify-content-center margin-t-20">
-                            <p class="font-size-18-5 f-fam-lora-serif font-weight-500  ">Brand & Marketing</p>
-                        </div>
-                        <div class="d-flex justify-content-center padding-0-15">
-                            <p class="color-7A7A7A f-fam-lora-serif text-align-center ">You can never solve a problem on the level on which it was created</p>
-                        </div>
-                        <div class="d-flex justify-content-center margin-t-25">
-                            <a href="postlarKateqoriyali.html"><button class="b-1-37 b-r-25 padding-10-35 b-c-373737 color-white f-fam-lora-serif font-weight-500 ">Daha çox oxu</button></a>
-                        </div>
-                        <br>
-                    </div>
-                </div>
+                {% endfor %}
+                
             </div>
         </div>
     </section>

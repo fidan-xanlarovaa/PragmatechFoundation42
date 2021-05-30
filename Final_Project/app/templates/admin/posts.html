@@ -1,0 +1,73 @@
+{% extends "admin/base.html" %} {% block content %}
+
+  <div class="flexx flexx-2">
+    <div class="content-div">
+<h3 class="my-2">Postlar</h3>
+<hr>
+
+<form action="{{ url_for('posts') }}" method="POST" enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name="p_title" placeholder="Post Title">
+    <textarea class="form-control my-2" name="p_description" placeholder="Post Description"></textarea>
+
+    <input type="datetime" class="form-control my-2" name="p_data" placeholder="Date">
+    
+    <input type="text" class="form-control my-2" name="p_link" placeholder="Button Title">
+    <input type="text" class="form-control my-2" name="p_tags" placeholder="Tags">
+
+    <input type="file" class="form-control my-2" name='p_image'>
+
+    <select name="owner_id" class="form-control">
+        {% for i in owners %}
+        <option value="{{i.id}}">{{i.own_title}}</option>
+        {% endfor %}
+    </select>
+
+    <select name="category_id" class="form-control">
+        {% for i in cate %}
+        <option value="{{i.p_c_title}}">{{i.p_c_title}}</option>
+        {% endfor %}
+    </select>
+
+    <input type="submit" class="btn btn-success my-2" value='Add Post'>
+</form>
+<hr>
+<h3>Daxil etdiyiniz məlumatlar</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Başlıq hissə</th>
+                    <th>Əlavə məlumat</th>
+                    <th>Düymə adı</th>
+                    <th>Düymə linki</th>
+                    <th>Post tarixi</th>
+                    <th>Silmə/Yeniləmə</th>
+                </tr>
+
+                  
+            </thead>
+            <tbody>
+                {% for i in posts %}
+                <tr>
+                    <td scope="row">{{i.id}}</td>
+                    <td>{{i.p_title}}</td>
+                    <td>{{i.p_description}}</td>
+                    
+                    <td>{{i.p_link_title}}</td>
+                    <td>{{i.p_link}}</td>
+                    <td>{{i.p_data}}</td>
+                    
+                    
+                    <td>
+                        <a href="">Delete</a>
+                        <a href="">Update</a>
+                    </td>
+                </tr>
+                {% endfor %}
+        
+            </tbody>
+        </table>
+
+    </div>
+</div>
+{% endblock %}

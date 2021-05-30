@@ -1,0 +1,54 @@
+{% extends "admin/base.html" %} {% block content %}
+
+<div class="flexx flexx-2">
+    <div class="content-div">
+
+        <h3 class="my-2">Məhsul Kateqotiyaları</h3>
+        <hr>
+        <h5 class="my-3"> Yeni Kategoriya</h5>
+
+        <form action="{{url_for('pr_Categories')}}" method='POST' enctype="multipart/form-data">
+
+            {{form.p_r_c_title(class='form-control my-2' )}}
+            {{form.p_r_c_description(class='form-control my-2' )}}
+            {{form.p_r_c_link_title(class='form-control my-2')}}
+            {{form.p_r_c_link(class='form-control my-2') }}
+            {{form.p_r_c_image(class='form-control my-2')}}
+            {{ form.submit(value='Əlavə et',class='btn btn-primary')}}
+
+        </form>
+        <hr>
+        <h3>Daxil etdiyiniz məlumatlar</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Başlıq hissə</th>
+                    <th>Əlavə məlumat</th>
+                    <th>Düymə adı</th>
+                    <th>Düymə linki</th>
+                    <th>Silmə/Yeniləmə</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in pr_categories %}
+                <tr>
+                    <td scope="row">{{i.id}}</td>
+                    <td>{{i.p_r_c_title}}</td>
+                    <td>{{i.p_r_c_description}}</td>
+                    <td>{{i.p_r_c_link_title}}</td>
+                    <td>{{i.p_r_c_link}}</td>
+                    <td>
+                        <a href="">Delete</a>
+                        <a href="">Update</a>
+                    </td>
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+{% endblock %}

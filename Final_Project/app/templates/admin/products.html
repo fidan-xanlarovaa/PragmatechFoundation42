@@ -1,0 +1,62 @@
+{% extends "admin/base.html" %} {% block content %}
+
+  <div class="flexx flexx-2">
+    <div class="content-div">
+<h3 class="my-2">Məhsullar</h3>
+<hr>
+
+<form action="{{ url_for('products') }}" method="POST" enctype="multipart/form-data">
+    <input type="text" class="form-control my-2" name="p_r_title" placeholder="Post Title">
+    <textarea class="form-control my-2" name="p_r_description" placeholder="Post Description"></textarea>
+
+    <input type="text" class="form-control my-2" name="p_r_price" placeholder="Price">
+
+    <input type="file" class="form-control my-2" name='p_r_image'>
+
+
+    <select name="prcategory_id" class="form-control">
+        {% for i in cate %}
+        <option value="{{i.p_r_c_title}}">{{i.p_r_c_title}}</option>
+        {% endfor %}
+    </select>
+
+    <input type="submit" class="btn btn-success my-2" value='Add Post'>
+</form>
+<hr>
+<h3>Daxil etdiyiniz məlumatlar</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Başlıq hissə</th>
+                    <th>Əlavə məlumat</th>
+                    <th>Qiymət</th>
+                    
+                </tr>
+
+                  
+            </thead>
+            <tbody>
+                {% for i in products %}
+                <tr>
+                    <td scope="row">{{i.id}}</td>
+                    <td>{{i.p_r_title}}</td>
+                    <td>{{i.p_r_description}}</td>
+                    
+                    <td>{{i.p_r_price}}</td>
+                    
+                    
+                    
+                    <td>
+                        <a href="{{url_for('deletee',Id=i.id)}}">Delete</a>
+                        <a href="">Update</a>
+                    </td>
+                </tr>
+                {% endfor %}
+        
+            </tbody>
+        </table>
+
+    </div>
+</div>
+{% endblock %}
